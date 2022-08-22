@@ -251,6 +251,7 @@ img {
   background-position: center;
   background-color: var(--secondary-bgc);
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .feature:nth-child(1)::before {
