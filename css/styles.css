@@ -182,6 +182,21 @@ img {
 
 .hero {
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/overlay.jpg);
+  min-height: 600px;
+  max-width: 1600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+
+  background-color: var(--hero-reserve-bgc);
+
 }
 
 .hero .title {
@@ -214,22 +229,6 @@ img {
   background-color: var(--accent-button-color);
 }
 
-.overlay {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/overlay.jpg);
-  min-height: 600px;
-  max-width: 1600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 200px 0;
-
-  background-color: var(--hero-reserve-bgc);
-}
 /*Featues*/
 
 .features {
@@ -393,8 +392,11 @@ img {
   box-sizing: border-box;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  width: 170px;
   height: 92px;
+}
+
+.list .customer {
+  width: calc(100% - 64px);
 }
 
 .customer-link:hover,
@@ -403,7 +405,7 @@ img {
 }
 
 .customer-link:hover > .icon,
-.customer-link:focus > .icon-company {
+.customer-link:focus > .icon {
   fill: var(--accent-color);
 }
 
